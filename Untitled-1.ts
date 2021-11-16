@@ -185,8 +185,7 @@ module.exports = {
         return reviewList;
     },
 
-
-    PaymentRequestUpdateEvent
+    
     async getAllReviewsOfRestaurant(restaurantId) {
         if (!verify.validString(restaurantId)) throw 'Restaurant id is not a valid string.';
 
@@ -195,7 +194,7 @@ module.exports = {
         for (let x of reviewList) {
             x._id = x._id.toString();
         }
-
+console.log(123)
         return reviewList;
     }
 }
